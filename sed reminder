@@ -1,0 +1,5 @@
+curl https://
+| sed -E -e "s/ (Testing)/|/g" | sed -e "s/|/,/g" | sed -E -e "s/ /,/g"
+| sed -e "1s/^/host,snow,team,ip,service1,service2,/" | tr -s , > 2020hostlist.csv
+
+## tr -s , --> removes any double commas
