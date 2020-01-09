@@ -10,3 +10,15 @@
 - [x] Just have fun!
 - [ ] More Scripts!
 
+#### random info
+- DNS return codes
+- https://support.umbrella.com/hc/en-us/articles/232254248-Common-DNS-return-codes-for-any-DNS-service-and-Umbrella-
+FORMERR
+SERVFAIL
+NXDOMAIN
+NOTIMP
+REFUSED
+YXDOMAIN
+XRRSET
+NOTAUTH
+NOTZONE
