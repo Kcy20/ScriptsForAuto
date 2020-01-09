@@ -1,0 +1,19 @@
+#!/bin/bash
+  
+USERNAME='yyy'
+PASSWORD='xxx'
+
+#Retrieve mapping in CSV format
+REPORT='file'
+OUTPUT='file.csv'
+echo "Retrieving ${REPORT} report.  Saving output as ${OUTPUT}"
+curl -s -u ${USERNAME}:${PASSWORD} --ntlm -L "http://.aspx?%2fStorageReports%2f${REPORT}&rs:Command=Render&rs:format=CSV" > $OUTPUT
+mv $OUTPUT /opt/splunk/etc/apps/search/lookups/ > /dev/null 2>&1
+ 
+ 
+#Retrieve Storage from the host exports to allow for lookups by host
+REPORT='NfsMaintenance'
+OUTPUT='NfsMaintenance.csv'
+echo "Retrieving ${REPORT} report.  Saving output as ${OUTPUT}"
+curl -s -u ${USERNAME}:${PASSWORD} --ntlm -L "http://.aspx?%2fStorageReports%2f${REPORT}&rs:Command=Render&rs:format=CSV" | sed 's/-nas,/,/' > $OUTPUT
+mv $OUTPUT /opt/splunk/etc/apps/search/lookups/ > /dev/null 2>&1
