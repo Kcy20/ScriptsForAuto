@@ -10,6 +10,9 @@
 - [x] Just have fun!
 - [ ] More Scripts!
 
+## InfoSec reads
+- https://www.sans.org/reading-room/whitepapers/testing/
+
 #### random info
 - DNS return codes
 - https://support.umbrella.com/hc/en-us/articles/232254248-Common-DNS-return-codes-for-any-DNS-service-and-Umbrella-
