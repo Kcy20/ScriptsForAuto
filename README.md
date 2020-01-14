@@ -10,8 +10,9 @@
 - [x] Just have fun!
 - [ ] More Scripts!
 
-## InfoSec reads
+## InfoSec reads / create a blog page
 - https://www.sans.org/reading-room/whitepapers/testing/
+- https://www.cisecurity.org/controls/inventory-and-control-of-hardware-assets/
 
 #### random info
 - DNS return codes
